@@ -1,0 +1,9 @@
+{
+	"name": "banking-adf-hl",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c395bff4-325c-4c27-ab0b-d03274855aa8",
+		"tenantId": "759e1259-0773-4b21-bf38-b3a8e077669c"
+	}
+}
