@@ -1,0 +1,117 @@
+{
+	"name": "bronze_fraud_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adls_banking_linked_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "*.csv",
+				"folderPath": "fraud-transactions",
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Prop_0",
+				"type": "String"
+			},
+			{
+				"name": "trans_date_trans_time",
+				"type": "String"
+			},
+			{
+				"name": "cc_num",
+				"type": "String"
+			},
+			{
+				"name": "merchant",
+				"type": "String"
+			},
+			{
+				"name": "category",
+				"type": "String"
+			},
+			{
+				"name": "amt",
+				"type": "String"
+			},
+			{
+				"name": "first",
+				"type": "String"
+			},
+			{
+				"name": "last",
+				"type": "String"
+			},
+			{
+				"name": "gender",
+				"type": "String"
+			},
+			{
+				"name": "street",
+				"type": "String"
+			},
+			{
+				"name": "city",
+				"type": "String"
+			},
+			{
+				"name": "state",
+				"type": "String"
+			},
+			{
+				"name": "zip",
+				"type": "String"
+			},
+			{
+				"name": "lat",
+				"type": "String"
+			},
+			{
+				"name": "long",
+				"type": "String"
+			},
+			{
+				"name": "city_pop",
+				"type": "String"
+			},
+			{
+				"name": "job",
+				"type": "String"
+			},
+			{
+				"name": "dob",
+				"type": "String"
+			},
+			{
+				"name": "trans_num",
+				"type": "String"
+			},
+			{
+				"name": "unix_time",
+				"type": "String"
+			},
+			{
+				"name": "merch_lat",
+				"type": "String"
+			},
+			{
+				"name": "merch_long",
+				"type": "String"
+			},
+			{
+				"name": "is_fraud",
+				"type": "String"
+			}
+		]
+	}
+}
